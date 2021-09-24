@@ -6,9 +6,9 @@ build:
     requires:
     - image: gcr.io/evident-healer-254915/vpp_base
       alias: VPP_BASE
-    context: ../../vpp/
+    context: ../../vpp-agent
     docker:
-      dockerfile: extras/docker/skaffold/Dockerfile_run.bionic
+      dockerfile: Dockerfile.bionic
   - image: gcr.io/evident-healer-254915/vpp_base
     context: ../../vpp/
     docker:
